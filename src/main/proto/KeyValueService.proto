@@ -1,0 +1,17 @@
+syntax = "proto3";
+package com.example.grpc;
+
+// Request payload
+message ValueRequest {
+  string key = 1;
+}
+
+message ValueResponse {
+  string value = 1;
+}
+
+// Defining a Service, a Service can have multiple RPC operations
+service KeyValueService {
+  // Define a RPC operation
+  rpc getValue(ValueRequest) returns (ValueResponse);
+}
