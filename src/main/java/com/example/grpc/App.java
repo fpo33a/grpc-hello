@@ -99,7 +99,7 @@ public class App
     {
         Properties streamsConfig = new Properties();
         // The name must be unique on the Kafka cluster
-        streamsConfig.put(StreamsConfig.APPLICATION_ID_CONFIG, "store-example");
+        streamsConfig.put(StreamsConfig.APPLICATION_ID_CONFIG, "grpc-store-example");
         // Brokers
         streamsConfig.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         // SerDes for key and value
